@@ -129,15 +129,15 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORGINS=[
-    "http://localhost:300"
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000"
 ]
 
 CORS_ALLOWED_CREDENTIALS=True
 CSRF_COOKIE_SECURE=True
 CSRF_COOKIE_HTTP_ONLY=True
-CSRF_TRUSTED_ORGINS = [
-    "http://localhost:300"
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000"
 ]
 CSRF_EXPOSE__HEADERS=["Content-Type", "X-CSRFToken"]
 SESSION_COOKIE_SECURE=True
