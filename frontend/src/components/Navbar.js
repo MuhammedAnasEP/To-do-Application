@@ -15,10 +15,10 @@ export default function Navbar() {
                     <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
 
                         {accessToken ?
-                            (<><li className='nav-item'><NavLink className={'nav-link'} to={'/auth/login'}>Login</NavLink></li>
-                            <li className='nav-item'><NavLink className={'nav-link'} to={'/auth/register'}>Register</NavLink></li></>):
                             (<><li className='nav-item'><NavLink className={'nav-link'} to={'/'}>Home</NavLink></li>
-                            <li className='nav-item'><NavLink className={'nav-link'} >Logout</NavLink></li></>)
+                            <li className='nav-item'><NavLink className={'nav-link'} >Logout</NavLink></li></>):
+                            (<><li className='nav-item'><NavLink className={'nav-link'} to={'/auth/login'}>Login</NavLink></li>
+                            <li className='nav-item'><NavLink className={'nav-link'} to={'/auth/register'}>Register</NavLink></li></>)
 
                         }
 
